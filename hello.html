@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SRU</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background: #003b73;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(
+                rgba(0, 59, 115, 0.8),
+                rgba(0, 59, 115, 0.8)
+            ),
+            url("https://images.unsplash.com/photo-1564981797816-1043664bf78d")
+            center/cover;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #003b73;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .about {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #003b73;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #003b73;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #003b73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SRU</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Welcome to SRU</h2>
+            <p>Shape Your Future With Knowledge, Innovation & Excellence</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About SRU</h2>
+        <p>
+            Welcome to SRU, a place where students learn, grow,
+            innovate and prepare themselves for a successful future.
+        </p>
+
+        <div class="cards" id="courses">
+
+            <div class="card">
+                <h3>Quality Education</h3>
+                <p>
+                    Learn from experienced faculty with modern
+                    teaching methods and resources.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Modern Campus</h3>
+                <p>
+                    Enjoy a vibrant campus with excellent facilities
+                    and a student-friendly environment.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Career Growth</h3>
+                <p>
+                    Develop your skills and get ready for exciting
+                    career opportunities.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 SRU. All Rights Reserved.</p>
+        <p>Welcome to SRU — Your Future Starts Here!</p>
+    </footer>
+
+</body>
+</html>
